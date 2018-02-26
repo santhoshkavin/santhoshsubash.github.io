@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>write image on text</title>
+<style type="text/css">
+body{
+   
+    background-size:cover;
+            font-family:italic;
+            font-size:20px;
+            margin:0;
+            padding:0;
+            line-height:13px;
+           
+   }
+.container{
+      width:100%;
+      heigth:100vh;
+      position:relative;
+}
+.container .inner{
+     position:absolute;
+     width:100%;
+     background-color: #0009;
+     transform: translate (-50%,-50%);
+     top:40%;
+     left:0%;
+}
+.navbar{
+    text-align:center;
+    width:100%;
+    background-color:black;
+    transform: tanslate(-50%,-50%)
+    opacity:0.5;
+}
+.navbar ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    position:relative;
+} 
+.navbar ul li a{
+  display:block;
+  padding:25px;
+  color:black;
+  text-decoration:none;
+  width:150px;
+}
+.navbar ul:after{
+   content: ""; clear:both;
+   diaplay:block;
+}
+.navbar ul li{
+   float:left;
+   listy-style:none;
+}
+.navbar ul ul{
+   display:none;
+}
+.navbar ul li:hover > ul{
+   display:block;
+}
+.navbar ul li:hover {
+   background:black;
+   transition:0.9s;
+}
+.navbar ul li:hover a{
+   color:black;
+}
+.navbar ul ul {
+   background-color:white;
+   padding:0;
+   margin:0;
+   position:absolute; top:100%;
+}
+.navbar ul ul li{
+   float:none;
+   position:relative;
+}
+.navbar ul ul li a{
+   padding:25px;
+   color:blue;
+   width:150px;
+   text-align:left;
+}
+.navbar ul ul li a:hover{
+   background-color:lightblue;
+   color:white;
+   transition:0.9s;
+}
+.section_title{
+   position:absolute;
+     width:100%;
+     background-color: #0009;
+     transform: translate (-50%,-50%);
+     top:80%;
+     left:0%;
+}
+.number{
+   background-color: #0009;
+   width:100%;
+   height:60px;
+   }
+
+</style> 
+<script type="text/javascript">
+<!-->
+var image1=new Image()
+image1.src="home.jpg"
+var image2=new Image()
+image2.src="testimonial.jpg"
+
+//-->
+</script>
+</head>
+<body>
+<div class ="navbar">
+
+<div class ="container">
+<div class ="inner">
+<p>..</p>
+</div>
+</div>
+<centre>
+   <ul>
+     <li><a href ="#"><font color="white"><center> Home</center></font></a></li>
+     <li><a href ="#"><font color="white">Internship</font></a>
+        <ul>
+          <li><a href ="#">The work of spark foundation is for the improvement of the students practical skills</a></li>
+        </ul>
+       
+     </li>
+     <li><a href="#"><font color="white"> About</font></a>
+            <ul>
+          <li><a href ="#">OUR MISSION:</a></li>
+          <li><a href ="#"><br>To  Inspire</a></li>
+          <li><a href ="#">OUR VISION:</a></li>
+          <li><a href ="#">To Make Impact On learning</a></li>
+          </ul>  
+      </li>
+     <li><a href="#"><font color="white"> Donation</font></a>
+             <ul>
+          <li><a href ="#">Scholarship</a></li>
+          <li><a href ="#">Events</a></li>
+          <li><a href ="#">Support</a></li>
+          <li><a href ="#">Community</a></li>
+           </ul>
+    </li>
+    <li><a href ="#"><font color="white"><center> Donate us</center></font></a></li>
+   </ul>
+<img src="home.jpg" name="slide" style="width:100%;height:100%">
+<script type="text/javascript">
+<!--
+var step=1
+function slideit(){
+document.images.slide.src=eval("image"+step+".src")
+if(step<2)
+step++
+else
+step=1
+setTimeout("slideit()",2500)
+}
+slideit()
+//-->
+</script>
+<div class ="section_title">
+<h2><font color="white"><u>About Us</u></font></h2>
+    <p><font color="white"><center>The spark foundation is working to bring parity in education,making sure children have equal opportunity,irrespective of the financial background</center></font></p>
+</div>
+<div class="number"> 
+<p><font color="white">IF YOU LIKE TO DONATE FOR THE FUTURE</font></p>
+<label><font color="yellow"><center>+65-8402-8590</center></font></label> 
+</div>            
+</centre>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+body{
+ margin:0;
+ padding:0;
+}
+.line{
+   position:absolute;
+     width:100%;
+     background-color: black;
+     opacity:0.7;
+     transform: translate (-50%,-50%);
+     top:30%;
+     left:0%;
+}
+.donation{
+    width:100%;
+   height:611px;
+   position:relative;
+   background-image:url(donate.jpg);
+}
+.donation .outer{
+   position:absolute;
+   width:84%;
+   background-color:white;
+   transform:translate(-50%,-50%);
+   top:50%;
+   left:50%;
+   }
+.section{
+   position:absolute;
+     width:100%;
+     background-color:white; 
+     opacity:0.7;
+     transform: translate (-50%,-50%);
+     bottom:70%;
+     left:0%;
+        
+}
+
+</style> 
+</head>
+<body>
+<div class="donation">
+<p><font color="black"></font></p>
+<div class="outer">
+<div class="section">
+<marquee>
+<img src="dd.png">
+<p><font color="black"><h3><center>THE SPARK FOUNDATION</h3></font></p>
+</marquee>
+</div>
+<div class="line">
+<p><font color="white"><h3><u>Scholarship</u><h3></font></p>
+<p><font color="white"><h4><t><br>We provide Financial Assistance To Meritorious And Deserving Students.</br>
+</t></br><h4>We Provide Prizes,Motivating Students To Bring Out Their Best </h4></font></p>
+<p><h4><br><font color="orange">As To Increase The Word Of Knowleadge The Word Fund And Of Helpers Is In Need</font></br></h4></p>
+</div>
+</div>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.center{
+    display:block;
+    align-left:auto;
+    align-right:auto;
+      width:100%;
+      height:70px;
+      
+}
+.useful{
+   }
+
+</style>
+<script type="text/javascript">
+<!-->
+var image3=new Image()
+image3.src="client_3.png"
+var image4=new Image()
+image4.src="client_2.png"
+var image5=new Image()
+image5.src="client_1.png"
+//-->
+</script>
+</head>
+<body>
+<div class="center">
+<p><font color="white">SPECIAL FEATURES</font></p>
+</div>
+<div class="font">
+<p><font color="white">VOLUNTEERS</font></p>
+</div>
+<img src="client_3.png"  name="slideshow"  style="">
+<script type="text/javascript">
+<!--
+var steps=3
+function slideon(){
+document.images.slideshow.src=eval("image"+steps+".src")
+if(steps<5)
+steps++
+else
+steps=3
+setTimeout("slideon()",2500)
+}
+slideon()
+//-->
+</script>
+<div class="useful">
+<p><font color="white">IT IS MORE REWARDING TO WATCH 
+                      MONEY CHANGE THE WORLD THAN TO 
+                      WATCH IT ACCUMULATE</font></p>
+</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.image{
+    background-color:white;
+    width:100%;
+    heigth:80px;
+    align-left:auto;
+}
+</style>
+<body>
+<div class="image">
+
+<img src="heart.jpg" align="middle"></img>
+</div>
+
+</body>
+</head>
+</html>
